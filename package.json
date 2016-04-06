@@ -1,0 +1,15 @@
+{
+  "name": "pro",
+  "version": "1.0.0",
+  "description": "pro",
+  "private": true,
+  "scripts": {
+    "start": "node server.js && node run.js",
+  },
+  "dependencies": {
+    "compression": "^1.6.1",
+    "express": "^4.13.4",
+    "mkdirp": "^0.5.1",
+    "simplecrawler": "^0.6.2"
+  }
+}
