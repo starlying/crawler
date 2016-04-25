@@ -2,7 +2,7 @@ var Crawler = require("simplecrawler");
 var mkdirp = require('mkdirp');
 var fs = require('fs');
 
-var domain = "www.tivix.com"
+var domain = "theme-next.iissnan.com"
 
 var crawler = new Crawler(domain);
 
@@ -19,11 +19,11 @@ crawler.on("fetchcomplete", function(queueItem, responseBuffer, response) {
     // console.log("I just received %s (%d bytes)", queueItem.url, responseBuffer.length);
     // console.log("It was a resource of type %s", response.headers['content-type']);
     // console.log("It was a resource of content %s", responseBuffer);
-    // var filePath = __dirname + '/' + domain + '/' + queueItem.url.replace('http://www.tivix.com/', '');
+    // var filePath = __dirname + '/' + domain + '/' + queueItem.url.replace('http://theme-next.iissnan.com/', '');
     // if (queueItem.url.indexOf('.') === -1) {
     //   filePath += '/index.html'
     // }
-    var relatedUrl = queueItem.url.replace('http://www.tivix.com/', '')
+    var relatedUrl = queueItem.url.replace('http://theme-next.iissnan.com/', '')
     if (!relatedUrl || relatedUrl.indexOf('.') === -1) {
       relatedUrl += 'index.html'
     }

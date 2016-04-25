@@ -4,7 +4,7 @@
   "description": "pro",
   "private": true,
   "scripts": {
-    "start": "node server.js && node run.js",
+    "start": "node server.js && node run.js"
   },
   "dependencies": {
     "compression": "^1.6.1",

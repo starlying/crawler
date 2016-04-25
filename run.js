@@ -2,7 +2,7 @@ var express = require('express')
 var path = require('path')
 var compression = require('compression')
 
-var domain = "www.tivix.com"
+var domain = "theme-next.iissnan.com"
 
 var app = express()
 app.use(compression())
